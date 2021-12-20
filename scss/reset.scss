@@ -35,7 +35,8 @@ $blue: #6a43f3;
         transition: all 0.5s ease;
         transition-duration: 0.15s;
         &__item {
-          padding: 5px 20px;
+        font-weight: 600;
+        padding: 5px;
         }
       }
     }
@@ -63,6 +64,10 @@ $blue: #6a43f3;
       }
     }
   }
+  .rect{
+    transform: translate(80px);
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -103,6 +108,17 @@ $blue: #6a43f3;
     flex-wrap: wrap;
     width: 100%;
     justify-content: start;
+    &__left,&__right{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px 0;
+    }
+    img{
+      max-width: 100%;
+    }
   }
   .footer {
     &_support {
@@ -110,6 +126,55 @@ $blue: #6a43f3;
     }
     &_menu {
       flex-direction: column;
+    }
+  }
+  .sub img{
+    display: none;
+  }
+  .join {
+    background-position-x: -190px;
+    .rect{
+      transform: translate(10px, 90px);
+      padding: 10px 20px;
+      word-wrap: break-word;
+      font-size: 18px;
+    }
+  }
+  .pri{
+    grid-template-columns: repeat(auto-fill, minmax(100%,1fr));
+  }
+  .df_partner{
+    flex-wrap: wrap;
+  }
+  .partner{
+    height: 400px;
+    .rect{
+      transform: translate(0px,30px);
+    }
+  }
+  .donation{
+    .rect{
+      transform: translate(0px, 100px);
+    }
+  }
+  .donation_content{
+    .bgc{
+      img{
+        display: none;
+      }
+    }
+  }
+  .blog{
+    .rect{
+      transform: translate(50px, 130px);
+    }
+  }
+  .gallery_bg{
+    .rect{
+      transform: translate(0px, 40px);
+    }
+    p{
+      width: 100%;
     }
   }
 }
@@ -125,31 +190,43 @@ $blue: #6a43f3;
       }
     }
   }
+  .rect{
+    transform: translate(0px);
+  }
+  .donation{
+    background-position-x: 90%;
+    .rect{
+      transform: translate(0px, 100px);
+      padding: 15px 20px;
+      font-size: 24px;
+    }
+  }
+  .gallery{
+    grid-template-columns: repeat(auto-fill,minmax(100%, 1fr));
+  }
 }
 
 @media screen and (max-width: 414px) {
   .container {
     max-width: 359px;
   }
-  .main_blocks {
-    img {
-      max-width: 250px;
-    }
-  }
   .head_text {
     font-size: 50px;
   }
   .video_to_pro {
-    height: 180px;
+    height: 182px;
+    width: 100%;
+  }
+  .sub{
+    img{
+      display: none;
+    }
   }
 }
 
 @media screen and (max-width: 360px) {
   .container {
     max-width: 314px;
-  }
-  .video_to_pro {
-    height: 150px;
   }
   .footer {
     &_support {
