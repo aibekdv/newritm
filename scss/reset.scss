@@ -67,6 +67,12 @@ $blue: #6a43f3;
   .rect{
     transform: translate(80px);
   }
+  .pro_blocks{
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+  .video_to_pro{
+    height: calc(100vh / 2);
+  }
   
 }
 
@@ -204,6 +210,9 @@ $blue: #6a43f3;
   .gallery{
     grid-template-columns: repeat(auto-fill,minmax(100%, 1fr));
   }
+  .video_to_pro{
+    height: calc(100vh / 3.5);
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -212,10 +221,6 @@ $blue: #6a43f3;
   }
   .head_text {
     font-size: 50px;
-  }
-  .video_to_pro {
-    height: 182px;
-    width: 100%;
   }
   .sub{
     img{
