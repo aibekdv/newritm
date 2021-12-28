@@ -6,9 +6,6 @@ const btnInfoContent = document.querySelector(".btn_info__content");
 
 burger.addEventListener('click', (e) => {
     navbar_menu.classList.toggle("change");
-    setTimeout(() => {
-        burger.className.includes("fa-bars") ? burger.classList.toggle("fa-times") : null;
-    }, 250)
 })
 
 btnInfo.addEventListener("click", () => {

@@ -4,6 +4,7 @@ $blue: #6a43f3;
 @media screen and (max-width: 1139px) {
   .container {
     max-width: 991px;
+    padding: 0px 12px !important;
   }
   header {
     .navbar {
@@ -20,6 +21,13 @@ $blue: #6a43f3;
   }
   header {
     .navbar {
+      .logo{
+        order: 2 !important;
+        margin: 0 auto !important;
+      }
+      .burger_menu{
+        order: 1 !important;
+      }
       .navbar_menu {
         position: absolute;
         right: -999999999px;
@@ -80,9 +88,22 @@ $blue: #6a43f3;
   .container {
     max-width: 575px;
   }
-
   header {
     .navbar {
+      .burger_menu{
+        order: 1;
+      }
+      .logo{
+        flex-direction: column;
+        justify-content: start;
+        order:2;
+        img{
+          width: 55px;
+        }
+        span{
+          font-size: 15px;
+        }
+      }
       .navbar_menu {
         width: 60%;
       }
@@ -92,8 +113,8 @@ $blue: #6a43f3;
     .left_block {
       max-width: 99%;
       h1 {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 32px;
+        line-height: 40px;
       }
       p {
         font-size: 16px;
@@ -140,7 +161,7 @@ $blue: #6a43f3;
   .join {
     background-position-x: -190px;
     .rect{
-      transform: translate(10px, 90px);
+      transform: translate(10px, 20px);
       padding: 10px 20px;
       word-wrap: break-word;
       font-size: 18px;
@@ -239,5 +260,11 @@ $blue: #6a43f3;
         padding: 0px 15px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 314px) {
+  .container {
+    max-width: 260px;
   }
 }

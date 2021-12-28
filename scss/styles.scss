@@ -22,7 +22,6 @@ li {
 
 .container {
   max-width: 1140px;
-  padding: 0px 12px;
   margin: 0 auto;
   width: 100%;
 }
@@ -42,6 +41,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    max-height: 65px;
     .logo {
       display: flex;
       align-items: center;
@@ -52,7 +53,8 @@ header {
         text-transform: uppercase;
       }
       img {
-        max-width: 71px;
+        max-height: 65px;
+        max-width: 70px;
         padding-right: 5px;
       }
     }
@@ -85,6 +87,7 @@ header {
   }
   .burger_menu {
     display: none;
+    position: absolute;
   }
 }
 
@@ -173,8 +176,9 @@ header {
 }
 
 .change {
-  right: 0 !important;
-  transition-duration: 0.15s;
+  left: 0 !important;
+  transition: left easy;
+  margin-top: 6px;
 }
 .blue {
   color: $blue;
